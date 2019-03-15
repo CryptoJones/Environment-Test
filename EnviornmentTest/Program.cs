@@ -15,6 +15,7 @@ namespace EnviornmentTest
         {
             
             string tempFilePath = Path.GetTempFileName().Replace(".tmp", ".pdf");
+            Console.WriteLine("Locale Settings: " + System.Globalization.CultureInfo.CurrentCulture);
             Console.WriteLine("Temporary File Path: " + tempFilePath);
             Console.WriteLine("OSVersion.Version.Major: " + System.Environment.OSVersion.Version.Major);
             Console.WriteLine("OSVersion.Version.Minor: " + System.Environment.OSVersion.Version.Minor);
